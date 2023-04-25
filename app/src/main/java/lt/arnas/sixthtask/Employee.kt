@@ -33,4 +33,8 @@ class Employee (
 
         return Period.between(birthDay, LocalDate.now()).years
     }
+
+    override fun toString(): String {
+        return "Employee: $firstName $lastName, Age: $age\nRole: $role, Experience: $exp years"
+    }
 }
